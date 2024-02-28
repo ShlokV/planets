@@ -1,0 +1,49 @@
+.residents-home {
+  background: linear-gradient(
+    90deg,
+    rgba(122, 52, 173, 1) 35%,
+    rgba(7, 20, 95, 1) 100%
+  );
+}
+
+.residents-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.residents-card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  padding: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 50px;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  color: rgb(24, 24, 70);
+  text-align: center;
+}
+
+.residents-card:hover {
+  transform: scale(1.05);
+}
+
+.residents-card:active {
+  transform: scale(0.5) rotateZ(1.7deg);
+}
+
+.residents-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.residents-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

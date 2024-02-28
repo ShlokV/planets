@@ -1,0 +1,88 @@
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.planet-home {
+  background: linear-gradient(
+    90deg,
+    rgba(122, 52, 173, 1) 35%,
+    rgba(7, 20, 95, 1) 100%
+  );
+}
+
+.planets-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.planet-card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  padding: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 50px;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  color: rgb(24, 24, 70);
+  text-align: center;
+}
+
+.planet-card:hover {
+  transform: scale(1.05);
+}
+
+.planet-card:active {
+  transform: scale(0.5) rotateZ(1.7deg);
+}
+
+.pagination-area {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+button:active {
+  scale: 0.92;
+}
+
+button:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 29, 78, 0.681) 0%,
+    rgba(31, 215, 232, 0.873) 60%
+  );
+  color: rgb(4, 4, 38);
+}

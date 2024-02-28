@@ -1,0 +1,57 @@
+.resident-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(122, 52, 173, 1) 35%,
+    rgba(7, 20, 95, 1) 100%
+  );
+}
+
+.card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  width: 500px;
+  padding: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 50px;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  color: rgb(24, 24, 70);
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.5) rotateZ(1.7deg);
+}
+
+.resident-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 5px;
+  color: rgb(48, 18, 75);
+  font-weight: bold;
+  height: 36px;
+}
+
+.resident-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -68,3 +68,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Project Description:
+
+This project is a React application that fetches data from an API to display information about planets and their residents. It consists of several components and styling files, as well as dependencies such as React Router DOM and Bootstrap.
+
+### Components:
+
+Planets Component (Planets.js):
+
+Fetches data about planets from an external API.
+Displays information about each planet, including its name, population, climate, and terrain.
+Allows users to click on a planet card to view details about its residents.
+Provides pagination functionality to navigate between pages of planet data.
+Residents Component (Residents.js):
+
+Fetches data about residents of a selected planet.
+Displays information about each resident, including their name, height, mass, and gender.
+Includes a back button to navigate back to the previous page.
+Pagination Component (Pagination.js):
+
+Provides pagination buttons for navigating between pages of planet data in the Planets component.
+
+### Styling Files:
+
+planets.css: Styles for the Planets component.
+resident.css: Styles for the Residents component.
+pagination.css: Styles for the Pagination component.
+
+### Dependencies:
+
+React Router DOM: Used for client-side routing to navigate between different components.
+Bootstrap: Used for styling the components and making the application responsive.
+Usage:
+
+### Clone the repository.
+
+Install dependencies using npm install.
+Run the project using npm start.
